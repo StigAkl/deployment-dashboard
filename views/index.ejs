@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deployment Status - Dark Mode</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Deployment Status</h1>
+      <p>Current deployment information for all environments</p>
+
+      <div class="env-container">
+        <% Object.keys(environments).forEach(key => { const env =
+        environments[key]; %>
+        <div class="environment <%= key.toLowerCase() %>">
+          <h2><%= key %></h2>
+          <p class="info">Last Deployed: <%= env.lastDeployed %></p>
+          <p class="info">Branch@Commit: <%= env.branchCommit %></p>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

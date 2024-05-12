@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deployment Status - Dark Mode</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #121212; /* Dark background */
+        color: #ffffff; /* Light text color */
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .env-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+      }
+      .environment {
+        border-radius: 5px;
+        padding: 20px;
+        background: linear-gradient(
+          145deg,
+          #334,
+          #223
+        ); /* Soft gradient background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+      }
+      .environment.dev {
+        background: linear-gradient(
+          145deg,
+          #2a3b8f,
+          #1a237e
+        ); /* Lighter blue gradient */
+      }
+      .environment.prod {
+        background: linear-gradient(
+          145deg,
+          #2e7d32,
+          #1b5e20
+        ); /* Lighter green gradient */
+      }
+      .environment.dummy {
+        background: linear-gradient(
+          145deg,
+          #f9a825,
+          #f57f17
+        ); /* Lighter yellow gradient */
+      }
+      h1,
+      h2 {
+        text-align: left;
+        color: #ffffff;
+      }
+      .info {
+        font-size: 16px;
+        color: #ffffff; /* Ensure all text is light for readability */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Deployment Status</h1>
+      <p>Current deployment information for all environments</p>
+
+      <div class="env-container">
+        <div class="environment dev">
+          <h2>Development</h2>
+          <p class="info">Last Deployed: 2023-05-10 15:00</p>
+          <p class="info">Branch@Commit: feature/update-xyz@5e7d3f1</p>
+        </div>
+
+        <div class="environment prod">
+          <h2>Production</h2>
+          <p class="info">Last Deployed: 2023-05-10 12:00</p>
+          <p class="info">Branch@Commit: release/2023.1@acd9b23</p>
+        </div>
+
+        <div class="environment dummy">
+          <h2>Dummy</h2>
+          <p class="info">Last Deployed: 2023-05-10 18:00</p>
+          <p class="info">Branch@Commit: mock-feature@e4f9c1b</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

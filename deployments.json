@@ -1,0 +1,18 @@
+{
+  "Development": {
+    "lastDeployed": "2023-05-11 10:00",
+    "branchCommit": "feature/update-abc@8d9e2c4"
+  },
+  "Production": {
+    "lastDeployed": "2023-05-11 10:00",
+    "branchCommit": "feature/update-abc@8d9e2c4"
+  },
+  "Dummy": {
+    "lastDeployed": "2023-05-11 10:00",
+    "branchCommit": "feature/update-abc@8d9esdffsdf2c4"
+  },
+  "dafewf": {
+    "lastDeployed": "2023-05-11 das10:00",
+    "branchCommit": "feature/update-abc@8d9esddasdaffsdf2c4"
+  }
+}
